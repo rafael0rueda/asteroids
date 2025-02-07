@@ -47,7 +47,8 @@ def main():
                 if shot.collisions(ast):
                     shot.kill()
                     ast.kill()
-                    
+                    ast.split()
+
             if ast.collisions(player):
                 print("Game over!")
                 sys.exit()
